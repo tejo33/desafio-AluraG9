@@ -1,4 +1,14 @@
+let amigos=[];
 function agregarNombreAmigo(){
-    
+     let elementoHTML =document.getElementById('amigo').value;
+     if(elementoHTML!==''){
+    console.log(elementoHTML);
+    amigos.push(elementoHTML);    
+     document.getElementById('amigo').value='';
 
-}// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+    }else{
+        alert("Por favor, inserte un nombre.");
+    }
+   
+
+}
