@@ -30,3 +30,16 @@ function actualizarLista(){
      document.getElementById('amigo').value='';    
     console.log('paso for'); 
 }
+function sortearAmigo(){
+
+    if(amigos.length>1){
+        let n= amigos.length;
+        console.log(n);
+        const numeroSorteado = Math.floor(Math.random() * n) + 1;
+        document.getElementById('amigo').value='';
+        alert(`eñ sorteado es '${amigos[numeroSorteado]}`);
+
+    }else{
+        alert('Deve haber mas de 1 amigo');
+    }
+}
