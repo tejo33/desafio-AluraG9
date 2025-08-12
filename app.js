@@ -35,9 +35,15 @@ function sortearAmigo(){
     if(amigos.length>1){
         let n= amigos.length;
         console.log(n);
-        const numeroSorteado = Math.floor(Math.random() * n) + 1;
+        let numeroSorteado = Math.floor(Math.random() * n) + 1;
         document.getElementById('amigo').value='';
         alert(`eñ sorteado es '${amigos[numeroSorteado]}`);
+         document.getElementById('listaAmigos').value='';
+         let nombreSortedo=document.getElementById('listaAmigos');
+         nombreSortedo.innerHTML='eñ sorteado es '+ amigos[numeroSorteado];
+         
+    
+
 
     }else{
         alert('Deve haber mas de 1 amigo');
